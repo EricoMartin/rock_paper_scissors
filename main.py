@@ -27,18 +27,19 @@ def rock_paper_scissors():
     elif user_choice in list_options:
         if user_choice == "R" and pc_option == "S":
                 print("You have won the Game!!!")
-                print(f'Player ({user_choice}) : CPU ({pc_option})')
+                print(f'Player (ROCK) : CPU (SCISSORS)')
         elif user_choice == "P" and pc_option == "R":
                 print("You have won the Game!!!")
-                print(f'Player ({user_choice}) : CPU ({pc_option})')
+                print(f'Player (PAPER) : CPU (ROCK)')
         elif user_choice == "S" and pc_option == "P":
                 print("You have won the Game!!!")
-                print(f'Player ({user_choice}) : CPU ({pc_option})')
+                print(f'Player (SCISSORS) : CPU (PAPER)')
         elif user_choice == pc_option:
             print("The game is a Tie!!!")
             print(f'Player ({user_choice}) : CPU ({pc_option})')
         else:
             print("You have lost the Game!!!")
+            print("PC wins!!!")
             print(f'Player ({user_choice}) : CPU ({pc_option})')
 
 rock_paper_scissors()
